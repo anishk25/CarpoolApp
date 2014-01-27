@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<problem xmlns="http://www.w3schools.com"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3schools.com vrp_xml_schema.xsd">
+     <problemType>
+          <fleetSize>INFINITE</fleetSize>
+          <fleetComposition>HOMOGENEOUS</fleetComposition>
+     </problemType>
+     <vehicles>
+          <vehicle>
+               <id>vehicle1</id>
+               <typeId>vehicleType</typeId>
+               <location>
+                    <id>[x=10.0][y=10.0]</id>
+                    <coord x="10.0" y="10.0"/>
+               </location>
+               <timeSchedule>
+                    <start>0.0</start>
+                    <end>1.7976931348623157E308</end>
+               </timeSchedule>
+          </vehicle>
+          <vehicle>
+               <id>vehicle2</id>
+               <typeId>vehicleType</typeId>
+               <location>
+                    <id>[x=1.0][y=13.0]</id>
+                    <coord x="1.0" y="13.0"/>
+               </location>
+               <timeSchedule>
+                    <start>0.0</start>
+                    <end>1.7976931348623157E308</end>
+               </timeSchedule>
+          </vehicle>
+     </vehicles>
+     <vehicleTypes>
+          <type>
+               <id>vehicleType</id>
+               <capacity>3</capacity>
+               <costs>
+                    <fixed>0.0</fixed>
+                    <distance>1.0</distance>
+                    <time>0.0</time>
+               </costs>
+          </type>
+     </vehicleTypes>
+     <services>
+          <service id="Passenger1" type="service">
+               <locationId>[x=5.0][y=7.0]</locationId>
+               <coord x="5.0" y="7.0"/>
+               <capacity-demand>1</capacity-demand>
+               <duration>0.0</duration>
+               <timeWindows>
+                    <timeWindow>
+                         <start>0.0</start>
+                         <end>1.7976931348623157E308</end>
+                    </timeWindow>
+               </timeWindows>
+          </service>
+          <service id="Passenger4" type="service">
+               <locationId>[x=15.0][y=13.0]</locationId>
+               <coord x="15.0" y="13.0"/>
+               <capacity-demand>1</capacity-demand>
+               <duration>0.0</duration>
+               <timeWindows>
+                    <timeWindow>
+                         <start>0.0</start>
+                         <end>1.7976931348623157E308</end>
+                    </timeWindow>
+               </timeWindows>
+          </service>
+          <service id="Passenger5" type="service">
+               <locationId>[x=1.0][y=1.0]</locationId>
+               <coord x="1.0" y="1.0"/>
+               <capacity-demand>1</capacity-demand>
+               <duration>0.0</duration>
+               <timeWindows>
+                    <timeWindow>
+                         <start>0.0</start>
+                         <end>1.7976931348623157E308</end>
+                    </timeWindow>
+               </timeWindows>
+          </service>
+          <service id="Passenger2" type="service">
+               <locationId>[x=5.0][y=13.0]</locationId>
+               <coord x="5.0" y="13.0"/>
+               <capacity-demand>1</capacity-demand>
+               <duration>0.0</duration>
+               <timeWindows>
+                    <timeWindow>
+                         <start>0.0</start>
+                         <end>1.7976931348623157E308</end>
+                    </timeWindow>
+               </timeWindows>
+          </service>
+          <service id="Passenger3" type="service">
+               <locationId>[x=15.0][y=7.0]</locationId>
+               <coord x="15.0" y="7.0"/>
+               <capacity-demand>1</capacity-demand>
+               <duration>0.0</duration>
+               <timeWindows>
+                    <timeWindow>
+                         <start>0.0</start>
+                         <end>1.7976931348623157E308</end>
+                    </timeWindow>
+               </timeWindows>
+          </service>
+     </services>
+     <solutions>
+          <solution>
+               <cost>46.87300634061858</cost>
+               <routes>
+                    <route>
+                         <driverId>noDriver</driverId>
+                         <vehicleId>vehicle1</vehicleId>
+                         <start>0.0</start>
+                         <act type="service">
+                              <serviceId>Passenger3</serviceId>
+                              <arrTime>5.830951894845301</arrTime>
+                              <endTime>5.830951894845301</endTime>
+                         </act>
+                         <act type="service">
+                              <serviceId>Passenger4</serviceId>
+                              <arrTime>11.8309518948453</arrTime>
+                              <endTime>11.8309518948453</endTime>
+                         </act>
+                         <end>17.6619037896906</end>
+                    </route>
+                    <route>
+                         <driverId>noDriver</driverId>
+                         <vehicleId>vehicle2</vehicleId>
+                         <start>0.0</start>
+                         <act type="service">
+                              <serviceId>Passenger2</serviceId>
+                              <arrTime>4.0</arrTime>
+                              <endTime>4.0</endTime>
+                         </act>
+                         <act type="service">
+                              <serviceId>Passenger1</serviceId>
+                              <arrTime>10.0</arrTime>
+                              <endTime>10.0</endTime>
+                         </act>
+                         <act type="service">
+                              <serviceId>Passenger5</serviceId>
+                              <arrTime>17.21110255092798</arrTime>
+                              <endTime>17.21110255092798</endTime>
+                         </act>
+                         <end>29.21110255092798</end>
+                    </route>
+               </routes>
+          </solution>
+     </solutions>
+</problem>
